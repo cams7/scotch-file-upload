@@ -1,28 +1,76 @@
-# ScotchFileUpload
+# Exemplo [Angular - File Uploads in Angular with a Node and Hapi Backend](https://scotch.io/tutorials/file-uploads-in-angular-with-a-node-and-hapi-backend)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
+* Autor: César Magalhães
+* Tecnologias: Angular, Node JS
+* Resumo: File Uploads in Angular with a Node and Hapi Backend
+* Linguagens: TypeScript
+* Fonte: <https://github.com/cams7/scotch-file-upload/>
+* Site: <https://cams7.github.io/scotch-file-upload/>
+* Linkedin: <https://br.linkedin.com/in/cams7>
 
-## Development server
+## Qual a finalidade desses exemplos?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Esses exemplos foram estudados e testados com intuíto de aprender um pouco mais sobre o Angular.
 
-## Code scaffolding
+## Sistemas requeridos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+* [Microsoft Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
+* [Ubuntu 16.04.5 LTS](http://releases.ubuntu.com/16.04/)
+* [Git](https://git-scm.com/downloads)
+* [Angular](https://angular.io/)
+* [Node JS](https://nodejs.org/en/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-## Build
+## Para testa o exemplo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Instale o Git
+* Instale o Node JS
+* Instale o Visual Studio Code
 
-## Running unit tests
+-------------------
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+cd /home/cams7/Dev/Angular2/Exemplos/scotch
+ng new scotch-file-upload
 
-## Running end-to-end tests
+cd /home/cams7/Dev/Angular2/Exemplos/scotch/scotch-file-upload
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+npm start
+#Go to http://localhost:4200
+#CTR-C
+```
 
-## Further help
+```sh
+git remote add origin https://github.com/cams7/scotch-file-upload.git
+git push -u origin master
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+sudo npm i -g angular-cli-ghpages
+
+ng build --prod --base-href "https://cams7.github.io/scotch-file-upload/"
+
+ngh
+```
+
+```sh
+npm install bootstrap --save
+```
+
+Change `scotch-file-upload/.angular-cli.json`
+
+`"styles": ["../node_modules/bootstrap/dist/css/bootstrap.css","styles.css"],`
+
+
+```sh
+cd /home/cams7/Dev/Angular2/Exemplos/scotch/scotch-file-upload
+
+npm test
+#CTR-C
+
+ng lint -fix
+
+ng build --prod
+
+http-server dist/
+#Go to http://localhost:8080
+#CTR-C
+```
