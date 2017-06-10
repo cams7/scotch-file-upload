@@ -63,6 +63,10 @@ Change `scotch-file-upload/.angular-cli.json`
 ```sh
 cd /home/cams7/Dev/Angular2/Exemplos/scotch/scotch-file-upload
 
+ng g m scotch-file-upload
+ng g c scotch-file-upload/page-file-upload
+ng g s scotch-file-upload/file-upload
+
 npm test
 #CTR-C
 

@@ -5,16 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { ScotchFileUploadModule } from './scotch-file-upload/scotch-file-upload.module';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ScotchFileUploadModule
   ],
-  providers: [],
+  declarations: [
+    AppComponent
+  ],  
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
